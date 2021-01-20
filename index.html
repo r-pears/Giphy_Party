@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div class="container">
+    <h1 class="text-center display-4 my-3">Giphy Party!</h1>
+    <form action="" class="form-inline justify-content-center m-3">
+      <input
+        class="form-control mr-2"
+        type="text"
+        name="text"
+        id="textSearch"
+        placeholder="Enter a search term"
+      />
+      <button id="searchBtn" class="btn btn-primary mr-2">Search Giphy!</button>
+      <button id="deleteBtn" class="btn btn-danger">Remove Images</button>
+    </form>
+    <div id="results" class="row"></div>
+  </div>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
